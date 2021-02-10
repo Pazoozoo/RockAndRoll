@@ -9,12 +9,6 @@ public class SwipeBallController : MonoBehaviour
     float _timeStart;
     float _endTime;
 
-    void FixedUpdate()
-    {
-        // Vector3 direction = Vector3.forward * joystick.Vertical + Vector3.right * joystick.Horizontal;
-        // rb.AddForce(direction * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
-    }
-
     void Update() {
         if (Input.GetMouseButtonDown(0)) {
             _screenPositionStart = Input.mousePosition;
@@ -22,10 +16,10 @@ public class SwipeBallController : MonoBehaviour
         }
 
         if (Input.GetMouseButtonUp(0)) {
-            var screenPositionDifference = Input.mousePosition - _screenPositionStart;
+            var screenPositionDifference = (Input.mousePosition - _screenPositionStart) / Screen.dpi;
             var timeDifference = Time.time - _timeStart;
             var worldDirection = Vector3.forward * screenPositionDifference.y + Vector3.right * screenPositionDifference.x;
-            rb.AddForce(worldDirection * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
+            rb.AddForce(worldDirection * speed * Time.fixedDeltaTime / timeDifference, ForceMode.VelocityChange);
         }
     }
 }
