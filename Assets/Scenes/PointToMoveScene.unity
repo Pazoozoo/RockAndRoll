@@ -151,7 +151,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.7137255, g: 0.8547766, b: 1, a: 1}
+  m_Color: {r: 0.72135955, g: 1, b: 0.7137255, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -556,10 +556,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1279886934}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6663e753155798949b396d1c61e083f2, type: 3}
+  m_Script: {fileID: 11500000, guid: 9af73e322be307e40ab50ede33ee5763, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 1
   rb: {fileID: 1279886935}
 --- !u!1 &1493108758
 GameObject:

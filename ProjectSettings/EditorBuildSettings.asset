@@ -12,6 +12,9 @@ EditorBuildSettings:
     path: Assets/Scenes/SwipeScene.unity
     guid: 9fc0d4010bbf28b4594072e72b8655ab
   - enabled: 1
+    path: Assets/Scenes/PointToMoveScene.unity
+    guid: 81200d617c5dad74881b2c4519f15e05
+  - enabled: 1
     path: Assets/Scenes/EndGameScene.unity
     guid: e295a21c4e944df46a6588dc1f335f61
   m_configObjects: {}
