@@ -4,5 +4,14 @@
 EditorBuildSettings:
   m_ObjectHideFlags: 0
   serializedVersion: 2
-  m_Scenes: []
+  m_Scenes:
+  - enabled: 1
+    path: Assets/Scenes/JoyStickScene.unity
+    guid: e7f1e34ce79e3a346a60fa2311a7ce44
+  - enabled: 1
+    path: Assets/Scenes/SwipeScene.unity
+    guid: 9fc0d4010bbf28b4594072e72b8655ab
+  - enabled: 1
+    path: Assets/Scenes/EndGameScene.unity
+    guid: e295a21c4e944df46a6588dc1f335f61
   m_configObjects: {}

@@ -1,10 +1,10 @@
 {
     "m_SelectedDeviceId": "emulator-5554",
     "m_SelectedPackage": {
-        "deviceId": "emulator-5554",
-        "name": "com.DefaultCompany.RockAndRoll",
-        "processId": 4970,
-        "exited": true
+        "deviceId": "",
+        "name": "",
+        "processId": 0,
+        "exited": false
     },
     "m_SelectedPriority": 0,
     "m_KnownPackagesForSerialization": [
@@ -13,6 +13,12 @@
             "name": "com.DefaultCompany.RockAndRoll",
             "processId": 4970,
             "exited": true
+        },
+        {
+            "deviceId": "emulator-5554",
+            "name": "com.bluestacks.appmart",
+            "processId": 1987,
+            "exited": false
         }
     ],
     "m_Tags": {
