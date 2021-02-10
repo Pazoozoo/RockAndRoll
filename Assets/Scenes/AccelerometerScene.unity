@@ -151,7 +151,7 @@ Light:
   serializedVersion: 10
   m_Type: 1
   m_Shape: 0
-  m_Color: {r: 0.7137255, g: 0.8547766, b: 1, a: 1}
+  m_Color: {r: 0.7797676, g: 0.6179246, b: 1, a: 1}
   m_Intensity: 1
   m_Range: 10
   m_SpotAngle: 30
@@ -446,9 +446,9 @@ GameObject:
   - component: {fileID: 1279886938}
   - component: {fileID: 1279886937}
   - component: {fileID: 1279886940}
+  - component: {fileID: 1279886941}
   - component: {fileID: 1279886936}
   - component: {fileID: 1279886935}
-  - component: {fileID: 1279886941}
   m_Layer: 0
   m_Name: Ball
   m_TagString: Untagged
@@ -557,10 +557,10 @@ MonoBehaviour:
   m_GameObject: {fileID: 1279886934}
   m_Enabled: 1
   m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 6663e753155798949b396d1c61e083f2, type: 3}
+  m_Script: {fileID: 11500000, guid: 84123eb264690e94793dd400d55bf928, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
+  speed: 5
   rb: {fileID: 1279886935}
 --- !u!114 &1279886941
 MonoBehaviour:

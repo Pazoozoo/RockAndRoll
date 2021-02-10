@@ -1,9 +1,9 @@
 {
-    "m_SelectedDeviceId": "emulator-5554",
+    "m_SelectedDeviceId": "BH901CER9E",
     "m_SelectedPackage": {
-        "deviceId": "emulator-5554",
+        "deviceId": "BH901CER9E",
         "name": "com.DefaultCompany.RockAndRoll",
-        "processId": 5632,
+        "processId": 11062,
         "exited": true
     },
     "m_SelectedPriority": 0,
@@ -48,7 +48,7 @@
             "deviceId": "BH901CER9E",
             "name": "com.android.settings",
             "processId": 19688,
-            "exited": false
+            "exited": true
         },
         {
             "deviceId": "BH901CER9E",
@@ -60,6 +60,24 @@
             "deviceId": "BH901CER9E",
             "name": "com.DefaultCompany.RockAndRoll",
             "processId": 3162,
+            "exited": true
+        },
+        {
+            "deviceId": "BH901CER9E",
+            "name": "com.DefaultCompany.RockAndRoll",
+            "processId": 9680,
+            "exited": true
+        },
+        {
+            "deviceId": "BH901CER9E",
+            "name": "com.android.settings",
+            "processId": 9115,
+            "exited": false
+        },
+        {
+            "deviceId": "BH901CER9E",
+            "name": "com.DefaultCompany.RockAndRoll",
+            "processId": 11062,
             "exited": true
         }
     ],
