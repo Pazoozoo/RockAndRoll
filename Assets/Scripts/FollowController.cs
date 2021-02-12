@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class FollowController : MonoBehaviour {
     public Rigidbody rb;
+    public float speed = 0.02f;
 
     void Update() {
         if (Input.GetMouseButtonDown(0)) 
@@ -21,8 +22,11 @@ public class FollowController : MonoBehaviour {
         }
         
         while (targets.GetEnumerator().MoveNext()) {
+            var position = rb.transform.position;
             var target = targets.Dequeue();
+            var velocity = new Vector3();
             target.y += rb.GetComponent<SphereCollider>().radius;
+            target = Vector3.SmoothDamp(position, target, ref velocity, speed);
             rb.transform.position = target;
             yield return null;
         }
