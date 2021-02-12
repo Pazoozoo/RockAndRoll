@@ -1,27 +1,30 @@
-﻿using System.Collections.Generic;
+﻿using System.Collections;
+using System.Collections.Generic;
 using UnityEngine;
 
-public class FollowController : MonoBehaviour
-{
-    // public float speed = 1f;
+public class FollowController : MonoBehaviour {
     public Rigidbody rb;
-    Queue<Vector3> _targets = new Queue<Vector3>();
 
     void Update() {
-        if (Input.GetMouseButton(0)) {
-            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
-            Physics.Raycast(ray, out var hitInfo);
-            
-            _targets.Enqueue(hitInfo.point);
-            return;
-        }   
-        
-        if (_targets.Count == 0) return;
-        MoveBall(_targets.Dequeue());
+        if (Input.GetMouseButtonDown(0)) 
+            StartCoroutine(RecordAndPlay());
     }
 
-    void MoveBall(Vector3 target) {
-        var offset = new Vector3(0f, 0.5f, 0f);
-        rb.transform.position = target + offset;
+    IEnumerator RecordAndPlay() {
+        var targets = new Queue<Vector3>();
+        
+        while (Input.GetMouseButton(0)) {
+            var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
+            if (Physics.Raycast(ray, out var hitInfo)) 
+                targets.Enqueue(hitInfo.point);
+            yield return null;
+        }
+        
+        while (targets.GetEnumerator().MoveNext()) {
+            var target = targets.Dequeue();
+            target.y += rb.GetComponent<SphereCollider>().radius;
+            rb.transform.position = target;
+            yield return null;
+        }
     }
 }

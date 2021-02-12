@@ -449,7 +449,7 @@ GameObject:
   - component: {fileID: 1279886941}
   - component: {fileID: 1279886936}
   - component: {fileID: 1279886935}
-  m_Layer: 0
+  m_Layer: 2
   m_Name: Ball
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -560,7 +560,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 0c8933debf2411041bbc8b49c57e1052, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 100
   rb: {fileID: 1279886935}
 --- !u!114 &1279886941
 MonoBehaviour:
