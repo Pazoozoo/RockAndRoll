@@ -3,7 +3,7 @@
     "m_SelectedPackage": {
         "deviceId": "BH901CER9E",
         "name": "com.DefaultCompany.RockAndRoll",
-        "processId": 11062,
+        "processId": 15224,
         "exited": true
     },
     "m_SelectedPriority": 0,
@@ -78,6 +78,18 @@
             "deviceId": "BH901CER9E",
             "name": "com.DefaultCompany.RockAndRoll",
             "processId": 11062,
+            "exited": true
+        },
+        {
+            "deviceId": "BH901CER9E",
+            "name": "com.DefaultCompany.RockAndRoll",
+            "processId": 14107,
+            "exited": false
+        },
+        {
+            "deviceId": "BH901CER9E",
+            "name": "com.DefaultCompany.RockAndRoll",
+            "processId": 15224,
             "exited": true
         }
     ],

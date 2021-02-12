@@ -6,6 +6,9 @@ EditorBuildSettings:
   serializedVersion: 2
   m_Scenes:
   - enabled: 1
+    path: Assets/Scenes/FollowScene.unity
+    guid: c39108737aef0e248a84cc6104c93c80
+  - enabled: 1
     path: Assets/Scenes/AccelerometerScene.unity
     guid: 68cf82d2f72137946a801f96bff16db6
   - enabled: 1

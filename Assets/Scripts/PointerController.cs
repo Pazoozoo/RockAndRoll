@@ -11,7 +11,7 @@ public class PointerController : MonoBehaviour
             var ray = Camera.main.ScreenPointToRay(Input.mousePosition);
             Physics.Raycast(ray, out var hitInfo);
 
-            var direction = hitInfo.point - transform.position;
+            var direction = (hitInfo.point - transform.position).normalized;
             rb.AddForce(direction * speed * Time.fixedDeltaTime, ForceMode.VelocityChange);
         }
     }
